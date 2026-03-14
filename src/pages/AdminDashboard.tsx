@@ -762,7 +762,7 @@ const [photo, setPhoto] = useState<File | null>(null);
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/admin/students",
+        "https://hostel-temp.onrender.com/api/admin/students",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -832,7 +832,7 @@ const handleAddStudent = async () => {
 
     if (photo) data.append("photo", photo);
 
-    await axios.post("http://localhost:5000/api/admin/students", data, {
+    await axios.post("https://hostel-temp.onrender.com/api/admin/students", data, {
       headers: {
         Authorization: `Bearer ${token}`,
         "Content-Type": "multipart/form-data",
