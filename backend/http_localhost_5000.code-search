@@ -1,0 +1,54 @@
+# Query: http://localhost:5000
+# Flags: RegExp
+# ContextLines: 1
+
+11 results - 5 files
+
+hostel\backend\src\contexts\AuthContext.tsx:
+   13  
+   14: //       const res = await fetch("http://localhost:5000/api/auth/login", {
+   15          
+
+   72    try {
+   73:     const res = await fetch("http://localhost:5000/api/auth/login", {
+   74        method: "POST",
+
+  150  //     try {
+  151: //       const res = await fetch("http://localhost:5000/api/auth/login", {
+  152  //         method: "POST",
+
+hostel\src\components\face\FacePreview.tsx:
+  29      // Send to backend
+  30:     const res = await fetch("/api/face/login", {
+  31        method: "POST",
+
+hostel\src\contexts\AuthContext.tsx:
+  105  
+  106: // const API_URL = "http://localhost:5000/api/auth";
+  107  
+
+  241      try {
+  242:       const res = await axios.post("http://localhost:5000/api/auth/login", {
+  243          email,
+
+hostel\src\pages\AdminDashboard.tsx:
+  445  
+  446: //     await axios.post("http://localhost:5000/api/admin/students", data, {
+  447  //       headers: {
+
+  764        const res = await axios.get(
+  765:         "http://localhost:5000/api/admin/students",
+  766          {
+
+  834  
+  835:     await axios.post("http://localhost:5000/api/admin/students", data, {
+  836        headers: {
+
+  976                              {/* <img
+  977:   src={`http://localhost:5000${s.photo}`}
+  978    className="w-9 h-9 rounded-full"
+
+hostel\src\pages\StudentDashboard.tsx:
+  91        const res = await fetch(
+  92:         "http://localhost:5000/api/face-attendance",
+  93          {
